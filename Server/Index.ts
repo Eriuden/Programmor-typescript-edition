@@ -3,7 +3,7 @@ import bodyParser from "body-parser"
 import cookieParser from "cookie-parser"
 require("dotenv").config({path: "./config/.env"})
 require("./config/db")
-import { checkUser, requireAuth } from "./middleware/auth.middleware"
+import { checkUser, requireAuth } from "./middleware/Auth.middleware"
 import cors from "cors"
 const app = express()
 import routes from "./routes/index.route";
